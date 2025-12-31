@@ -21,7 +21,7 @@ export const ONE_CORE_COLORS = {
 
   green: Color('#98c379'),
   violet: Color('#c678dd'),
-} as const
+ } as const
 
 export const colors = convertToHex({
   ...ONE_CORE_COLORS,

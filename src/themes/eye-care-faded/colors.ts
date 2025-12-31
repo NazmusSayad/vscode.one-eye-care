@@ -1,9 +1,13 @@
 import Color from 'color'
 import { convertToHex } from '../../utils'
-import { ONE_CORE_COLORS } from '../one-dark/colors'
+import { ONE_CORE_COLORS, OneCoreColors } from '../one-dark/colors'
 import { generateAnsiColors } from '../../helpers/generate-ansi-colors'
 
-const coreColors = {
+type EyeCareFadedColors = OneCoreColors & {
+  darkViolet: Color
+}
+
+const coreColors: EyeCareFadedColors = {
   ...ONE_CORE_COLORS,
 
   orange: ONE_CORE_COLORS.orange.darken(0.1).desaturate(0.15),
