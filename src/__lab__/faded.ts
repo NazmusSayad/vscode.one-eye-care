@@ -1,13 +1,32 @@
 import Color from 'color'
 
-const input = '#D2AE6B'
-const color = Color(input)
+const cases: { input: string; expected: string }[] = [
+  {
+    input: '#D2AE6B',
+    expected: '#C8B072',
+  },
+  {
+    input: '#C18A57',
+    expected: '#B38D5D',
+  },
+  {
+    input: '#B469CA',
+    expected: '#A66DC6',
+  },
+]
 
-const modifications = color // Apply modifications here
+cases.forEach(({ input, expected }) => {
+  const color = Color(input)
+  const outputHex = getFadedColor(color).hex()
 
-const output = modifications.hex()
-if (output === '#C8B072') {
-  console.log('✅ Output is as expected')
-} else {
-  console.error('❌ Output is not as expected. Received:', output)
+  if (outputHex === expected) {
+    console.log('✅ Output is as expected')
+  } else {
+    console.error('❌ Output is not as expected. Received:', outputHex)
+  }
+})
+
+// TODO: Implement the faded color calculation
+function getFadedColor(color: Color) {
+  return color
 }
