@@ -1,12 +1,12 @@
-import { colors } from './colors'
 import { Theme } from '../../types'
-import uiColors from './ui-colors'
-import tokenColors from './token-colors'
-import semanticTokenColors from './semantic-token-colors'
+import uiColors from '../one-dark/ui-colors'
+import tokenColors from '../one-dark/token-colors'
+import semanticTokenColors from '../one-dark/semantic-token-colors'
 import { config } from '../../packageJson'
+import { colors } from './colors'
 
 export default {
-  label: config.themeNamePrefix + ' One Darken',
+  label: config.themeNamePrefix + ' Extreme Eye Care',
   uiTheme: 'vs-dark',
 
   colors: uiColors(colors),

@@ -1,4 +1,3 @@
-import Color from 'color'
 import { OneDarkColors } from './colors'
 
 export default function (colors: OneDarkColors) {
