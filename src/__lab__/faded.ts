@@ -22,7 +22,13 @@ cases.forEach(({ input, expected }) => {
   if (outputHex === expected) {
     console.log('✅ Output is as expected')
   } else {
-    console.error('❌ Output is not as expected. Received:', outputHex)
+    console.error(
+      '❌ Output is not as expected.',
+      'Expected:',
+      expected,
+      'Received:',
+      outputHex
+    )
   }
 })
 
