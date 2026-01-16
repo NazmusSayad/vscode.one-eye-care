@@ -25,7 +25,7 @@ export default {
   },
   repository: {
     type: 'git',
-    url: 'git+github.com:nazmussayad/vscode-theme.onnokicu--.git',
+    url: 'https://github.com/NazmusSayad/vscode.one-eye-care.git',
   },
 
   keywords: [
